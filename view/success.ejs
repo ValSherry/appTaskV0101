@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TaskManager</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Менеджер задач">
+        <meta name="keywords" content="задачи, план, плпнирование">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="task, tasks">
+        <link rel="shortcut icon" href="img/task.png">
+        <!-- Подключение стилей -->
+        <link rel="stylesheet" href="/css/main.css">
+	    <link rel="stylesheet" href="/css/style-dialog.css">
+        <!-- Подключение скриптов (внешних) -->	
+        <script src="/js/jquery-1.12.4.js"></script>
+        <script src="/js/jquery-ui.js"></script>
+        <!-- Подключение скриптов (внутренних) -->	
+	    <script src="/myjs/mess.js"></script>
+	    <script src="/myjs/main.js"></script>
+        <!-- Подключение скриптов КОНЕЦ -->
+    </head>
+    <body  onload="<%= vi %>">
+        <div class="page-wrapper">
+            <header>
+                <!-- Логотип -->
+                <a href="#">
+                    <img src="img/task.png" alt="UserTask">
+                </a>
+                <!-- Логотип КОНЕЦ -->
+                <div>
+                    <!-- Меню -->
+                    <nav role="navigation">
+                        <ul>
+                            <li>
+					            <a href="/verification1" onClick="<%= vi %>" class="active" id="menu1">Задачи бланками</a>
+                            </li>
+                            <li>
+                                <a href="/verification2" onClick="<%= vi %>" id="menu2">Задачи списком</a>
+                            </li>
+                            <li>
+                                <a href="#" onClick="javascript:addTask('<%= name %>');" id="menu3">Создать задачу</a>
+                            </li>
+				            <li>
+                                <a href="/" rel="nofollow" target="_blank">Выход</a>
+                            </li>
+                        </ul>
+                     </nav>
+                    <!-- Меню КОНЕЦ -->
+                </div>
+            </header>
+            <main role="main">
+                <h1>МЕНЕДЖЕР ЗАДАЧ</h1>
+                <!-- Контейнер под контент -->
+                <div class="article-holder" id="result_multi">
+	            </div>
+            </main>
+            <!-- Подвал -->
+            <footer>
+                <ul>
+                    <li>
+                         <a href="/" rel="nofollow" target="_blank">выйти</a>
+                    </li>
+                    <li>
+                         <a href="javascript:about();">о программе</a>
+                    </li>
+                    </ul>
+                <small>#TaskManager © 2019</small>
+            </footer>
+            <!-- Подвал КОНЕЦ -->
+            <!-- Скролл вверх -->
+            <div class="scrolltop"></div>
+            <!-- Скролл вверх КОНЕЦ -->
+            </div>
+            <!-- Диалог -->
+	        <div id="dialog" style="display:none;">
+                <p>Задача добавлена</p>
+            </div>
+			<div id="dialog2" style="display:none;">
+                <p>#TaskManager © 2019 v1.1</p>
+            </div>
+    </body>
+</html>
