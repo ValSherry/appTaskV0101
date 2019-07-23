@@ -1,0 +1,576 @@
+/**                        Стили для success.ejs                     **/
+/*************************** Сброс стилей *****************************/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/************************* Общие стили ***************************/
+
+body, html {padding: 0;margin: 0; height: 100%}
+body {
+    background: #f6f6f6;
+    color: #2d2d2d;
+    font-family: 'Arial', 'Helvetica';
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4, h5, h6 {font-size: 18px;}
+
+a {color: #778899} 
+a:hover {color: #3CB371}
+
+header, footer, main {
+    width: 100%;
+}
+
+header {
+    padding: 10px 0 10px;
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li, footer ul li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+header ul a, footer ul a {
+    color: #2d2d2d;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+
+header ul a:hover, header ul a.active, footer ul a:hover, footer ul a.active {
+    color: #2d2d2d;
+    border-bottom: 2px solid #2d2d2d;
+    transition: .2s;
+}
+
+main {
+    flex-grow: 1;
+    line-height: 1.8;
+}
+
+footer {
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-top: 1px solid #d4d4d4;
+}
+
+footer small {
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main h1, main h2, main h3, main h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2d2d2d;
+    margin: 0 0 10px 0;
+}
+
+main h1 {
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper img{
+	width: 40px;
+    height: 40px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 90%;
+	padding: 5px;
+	margin: 20px;
+}
+
+.scrolltop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.75);
+    opacity: .75;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.scrolltop:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+.scrolltop:after {
+    content: "⇪";
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+}
+
+/************************* Страница категории ***************************/
+
+/** ВКЛАДКА ДОБАВИТЬ ЗАДАЧУ **/
+.article-holder-add {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 30px 0 0 0;
+}
+
+.article-holder-add article {
+    background: #ffffff;
+    margin: 10px 0 0 0;
+    flex-basis: calc(30% - 4px); 
+	border-width: 2px;
+	border-style: solid;
+	border-color: green;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+.article-holder-add article .secondary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px 3px ;
+    box-sizing: border-box;
+    font-size: 14px;
+	background: #F0FFF0;
+}
+
+.article-holder-add article .secondary1 {
+	background: #F0FFF0;
+	font-size: 14px;
+}
+
+.article-holder-add article h2 {
+	width:326px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #2e8b57;
+	text-align:center;
+}
+
+.article-holder-add article .secondary input {
+width:200px;
+}
+
+.article-holder-add article li {
+	display: inline-block;
+    width: 96%;
+    color: #2e8b57;
+    border-width: 2px;
+	border-style: solid;
+	border-color: #2e8b57;
+	padding: 0 5px ;
+	margin: 3px 0px;
+}
+
+.article-holder-add article .secondary .label {
+width:100px;
+}
+
+.article-holder-add article .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 4px;
+    cursor: pointer;
+	width: 100%;
+}
+
+.article-holder-add article .button1 {display: none;}
+
+
+/** ВКЛАДКА  ЗАДАЧИ СПИСКОМ **/
+
+.article-holder-tb {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 30px 0 0 0;
+}
+
+.article-holder-tb article {
+    background: #ffffff;
+    margin: 10px 0 0 0;
+    flex-basis: calc(100% - 4px);
+}
+
+.article-holder-tb article .rec {
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+	align-items: center;
+}
+
+.article-holder-tb article div {
+	padding: 5px;
+}
+
+.article-holder-tb article .image {
+	width: 10%;
+}
+
+.article-holder-tb article .title {
+	width: 15%;
+}
+
+
+.article-holder-tb article .content {
+	width: 40%;
+}
+
+.article-holder-tb article .doc {
+	width: 19%;
+}
+
+.article-holder-tb article .date {
+	width: 11%;
+}
+
+.article-holder-tb article img {
+	border-width: 2px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 90%;
+	padding: 5px;
+	margin: 10px; 
+	width: 60px;
+	height: 60px;
+    opacity: 1;
+    transition: .3s
+}
+
+/** ВКЛАДКА ЗАДАЧИ БЛАНКАМИ **/
+.article-holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin: 30px 0 0 0;
+}
+
+.article-holder article {
+    background: #ffffff;
+    margin: 10px 0 0 0;
+    flex-basis: calc(25% - 4px);
+}
+
+.article-holder article a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.article-holder article .details {
+    padding: 10px;
+	text-align:center;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #5F9EA0;
+    flex-grow: 1;
+}
+
+.article-holder article .yes {
+    width: 40px;
+	height: 40px;
+}
+
+.article-holder article h2 {
+    font-weight: 300;
+	font-size: 18px;
+    color: #2F4F4F;
+}
+
+.article-holder article img {
+	border-width: 2px;
+	border-style: solid;
+	border-color: green;
+	border-radius: 90%;
+	padding: 5px;
+	margin: 10px; 
+	width: 100px;
+	height: 100px;
+    opacity: 1;
+    transition: .3s
+}
+
+.article-holder article:hover img {
+    opacity: .75;
+    transition: .3s
+}
+.article-holder article .secondary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.article-holder article .secondary .views {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    padding: 0 0 0 16px;
+}
+
+.article-holder article .secondary .views:after {
+    display: block;
+    position: absolute;
+    content: '☋';
+    top: 0;
+    left: 0;
+}
+
+.more {
+    margin: 20px auto 10px;
+    background: #ca6a96;/**/
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 10px;
+    transition: .2s;
+    cursor: pointer;
+    display: table;
+}
+
+.more:hover {
+    background: #e889b4;
+    transition: .2s;
+}
+
+/************************* Мобильные стили ***************************/
+
+@media (max-width: 800px) {
+    header {
+        display: block;
+        padding: 10px 0 0 0;
+    }
+	
+    header nav#language {
+        margin: 20px 0 10px;
+        flex-direction: row;
+    }
+	
+    header ul li {
+        margin: 0 20px 20px 0;
+    }
+	
+    main h1 {
+        margin: 20px 0 30px;
+    }
+	
+    .article-holder {
+        margin: 20px 0 0 0;
+    }
+	
+    .article-holder article {
+        flex-basis: calc(50% - 5px);
+    }
+	
+    .scrolltop {
+        bottom: 20px;
+        right: 20px;
+    }
+	
+    .article-wrapper article {
+        display: block;
+        margin: 0 0 20px 0;
+    }
+	
+    .article-wrapper {
+        flex-direction: column;
+    }
+	
+    .article-wrapper aside, .article-wrapper article {
+        max-width: 100%;
+        width: 100%;
+    }
+	
+    .article-wrapper aside img {
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+	
+    .article-wrapper aside a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+	
+    .article-holder-tb {
+	    font-size: 12px;
+    }
+	
+	.article-holder-tb article {
+	    border-width: 4px;
+        border-style: solid;
+	    border-color: #8FBC8F;
+	}
+	
+	.article-holder-tb article div {
+	    padding: 3px;
+	}
+	
+    .article-holder-tb article  img{
+	    margin: 4px; 
+	    width: 20px;
+	    height: 20px;
+	    padding: 1px;
+	    border-color: #8FBC8F;
+	}
+	
+    .article-holder-tb article .image  {
+	    width: 7%;
+    }
+	
+    .article-holder-tb article .doc {
+	    width: 20%;
+	    font-size: 10px;
+    }
+	
+    .article-holder-tb article .date {
+	    width: 10%;
+	    font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .article-holder-tb {
+	    font-size: 11px;
+    }
+	
+	.article-holder-tb article {
+	    border-width: 4px;
+        border-style: solid;
+	    border-color: #8FBC8F;
+	}
+	
+	.article-holder-tb article div {
+	    padding: 2px;
+	}
+
+    .article-holder-tb article  img{
+	    margin: 4px; 
+	    width: 25px;
+	    height: 25px;
+	    padding: 1px;
+	    border-color: #8FBC8F;
+	}
+
+    .article-holder-tb article .image  {
+	    width: 7%;
+    }
+
+    .article-holder-tb article .doc {
+	    width: 20%;
+	    font-size: 10px;
+    }
+
+    .article-holder-tb article .date {
+	    width: 10%;
+	    font-size: 10px;
+    }
+
+    .article-holder article {
+        flex-basis: 100%;
+    }
+	
+    .scrolltop {
+        bottom: 10px;
+        right: 10px;
+    }
+}
