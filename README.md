@@ -33,3 +33,18 @@ CREATE TABLE public.tasks_user
 node app.js
 
 Запускается приложение - http://localhost:3000
+
+Главная страница  
+![alt text](images/index.png) 
+
+Страница с выводом из базы данных бланками  
+![alt text](images/Zadachi1.png) 
+
+Страница с выводом из базы данных таблицей 
+![alt text](images/Zadachi2.png) 
+
+Страница звписи в базу данных задачи 
+![alt text](images/Zadachi3.png) 
+
+Страница регистрации  
+![alt text](images/reristration.png) 
