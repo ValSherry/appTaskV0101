@@ -13,7 +13,7 @@ CREATE TABLE public.users
     username character(20) COLLATE pg_catalog."default" NOT NULL,
     pass character(20) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT "Au_pkey" PRIMARY KEY (username)
-)
+)  
 
 2)tasks_user
 CREATE TABLE public.tasks_user
