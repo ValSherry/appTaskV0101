@@ -7,7 +7,7 @@
 Параметры базы данных: const client = new Client({ host: 'localhost', port: 5432, user: 'postgres', password: 'Postgres', database: 'db' }); 
 
 В базе данных созданы таблицы: 
-1) users 
+1)users 
 CREATE TABLE public.users  
 (  
     username character(20) COLLATE pg_catalog."default" NOT NULL,  
